@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><title>jQuery To Do List</title>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/todo.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/todo.js"></script>
 </head>
 <body>
-  <div>
-    <h2>Add New</h2>
-    <input type="text" name="item" id="addItemTxt" autofocus></input>
-    <button id="addBtn"><img src="images/add-icon.png"><span class="btnText">Add new</span></button>
-  </div>
-  <div>
-    <h2>To Do List</h2>
-      <ul id="todoList">
-      </ul>
-  </div>
-  <div>
-    <h2>Completed Items</h2>
-    <ul id="completed">
-    </ul>
+  <div id="container">
+    <h1 class="center">To Do List</h1>
+    <div id="main">
+      <h3>Add New To Do</h3>
+      <input type="text" name="item" id="addItemTxt" autofocus></input>
+      <button id="addBtn"><img src="images/add-icon.png"><span class="btnText">Add new</span></button>
+    </div>
+    <div id="todoList">
+      <h3>To Do List</h3><span class="small_txt">You've got some work to do</span>
+        <ul id="todoItems"></ul>
+    </div>
+    <div id="completedList">
+      <h3>Completed Items</h3><span class="small_txt">Good job</span>
+      <ul id="completedItems"></ul>
+    </div>
   </div>
 </body>
 </html>
