@@ -10,13 +10,9 @@ $(document).ready(function() {
     $('input:checkbox').click(function(){
       var chkBox = $(this);
       if (chkBox.is(':checked')) {
-        chkBox.parent().appendTo('#completedItems');
-        chkBox.parent().css('color', 'red');
-        chkBox.parent().css('text-decoration', 'line-through');
+        chkBox.parent().appendTo('#completedItems').addClass('completed');
       } else {
-        chkBox.parent().appendTo('#todoItems');
-        chkBox.parent().css('color', 'black');
-        chkBox.parent().css('text-decoration', 'none');        
+        chkBox.parent().appendTo('#todoItems').removeClass('completed');
       }
     })
 
