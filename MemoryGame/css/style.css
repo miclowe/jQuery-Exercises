@@ -1,0 +1,35 @@
+
+div {
+
+}
+
+.red {
+  background-color: red;
+}
+
+#game {
+  width: 450px;
+}
+
+li {
+  height: 80px;
+  margin: 10px;
+  width: 60px;
+  display: inline-block;
+}
+
+.back {
+  height: 80px;
+  width: 60px;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.front {
+  border: 1px solid blue;
+  height: 80px;
+  width: 60px;
+}
