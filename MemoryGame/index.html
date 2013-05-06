@@ -5,20 +5,28 @@
   <title>Memory Game</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/memory.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-  <h1>Memory</h1>
-  <div id="timer"></div>
-  <div id="buttons">
-    <button id="small_btn">Small</button>
-    <button>Medium</button>
-    <button>Large</button>
-  </div>
-  <div>
-    <ul id='game'>
-    </ul>
+  <div id="container">
+    <div id="game-controls">
+      <h1>How Good Is Your Memory?</h1>
+      <div id="buttons">
+        <button id="small_btn">Small</button>
+        <button>Medium</button>
+        <button>Large</button>
+      </div>
+      <div id="results">
+        <h3 id="timer"></h3>
+        <h4 id="winner"></h4>
+      </div>
+    </div>
+    <div id="game">
+      <ul>
+      </ul>
+    </div>
   </div>
 </body>
 </html>

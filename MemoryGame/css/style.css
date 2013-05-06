@@ -1,35 +1,78 @@
-
-div {
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.red {
-  background-color: red;
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#container {
+  margin: auto;
+  text-align: center;
+}
+
+#game-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#game-controls h1 {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 50px;
+  margin: 15px;
+}
+
+#buttons button {
+  margin: 5px;
+  padding: 5px 7px;
 }
 
 #game {
-  width: 450px;
+  margin: 20px auto;
+  width: 550px;
 }
 
-li {
-  height: 80px;
-  margin: 10px;
-  width: 60px;
+#results {
+  height: 30px;
+}
+
+#timer {
+  margin-top: 10px;
+}
+
+#winner {
+  color: red;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.box {
+  background-color: #D9D9D9;
+  border: 1px solid #999;
   display: inline-block;
+  height: 80px;
+  margin: 5px;
+  padding: 5px;
+  width: 80px;
+  -mox-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 1;
 }
 
-.back {
-  height: 80px;
-  width: 60px;
+.box:hover {
+  cursor: pointer;
+}
+
+.box span {
   position: absolute;
+  width: 80px;
+  z-index: 2;
 }
 
-.hidden {
-  display: none;
-}
-
-.front {
-  border: 1px solid blue;
-  height: 80px;
-  width: 60px;
+.ltr {
+  font-family: 'Acme', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
 }
